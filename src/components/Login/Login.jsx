@@ -17,7 +17,7 @@ const Login = props => {
 			enteredEmail.includes('@') &&
 				enteredPassword.trim().length > 6
 		);
-	}, [setFormIsValid, enteredEmail, enteredPassword]);
+	}, [enteredEmail, enteredPassword]);
 
 	const emailChangeHandler = event => {
 		setEnteredEmail(event.target.value);
